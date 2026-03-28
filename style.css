@@ -1,0 +1,102 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f0f2f5;
+  color: #333;
+}
+
+/* Header & Navbar */
+header {
+  background-color: #0077cc;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav .nav-links li a:hover,
+nav .nav-links li a.active {
+  color: #ffcc00;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('https://picsum.photos/1200/400') no-repeat center/cover;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Content section */
+.content {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav .nav-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  nav .nav-links li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
